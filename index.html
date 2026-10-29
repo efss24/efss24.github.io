@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 【填写】浏览器标签上的名字和搜索引擎摘要 -->
+  <title>Wentao Li</title>
+  <meta name="description" content="Wentao Li - Ph.D. student at Xi'an Jiaotong University, computational pathology and medical vision-language models.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 未填写的部分都包在 <template> 里：浏览器不显示。填好后删掉外面的 <template ...> 和 </template> 即可显示，
+     同时把顶部导航里对应的链接也从 <template> 里移出来。 -->
+
+<!-- ============ 顶部导航：改动 section 时同步这里的链接 ============ -->
+<nav class="topnav">
+  <div class="wrap topnav-inner">
+    <a class="brand" href="#">Wentao Li</a>
+    <div class="links">
+      <template data-todo="nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      </template>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ============ 个人信息卡 ============ -->
+  <header class="profile">
+    <!-- 【填写】头像：把照片放到 assets/img/ 下，改 src（建议正方形，400×400 左右），再去掉 template -->
+    <template data-todo="avatar">
+    <img class="avatar" src="assets/img/avatar.svg" alt="Wentao Li">
+    </template>
+    <div class="profile-text">
+      <h1>Wentao Li <span class="cn-name">李文涛</span></h1>
+      <p class="role">Ph.D. Student · School of Software Engineering · Xi’an Jiaotong University</p>
+      <p class="tagline">Research interests in computational pathology and medical vision-language models.</p>
+      <div class="contact">
+        <!-- 邮箱按防爬虫写法显示为文字，不做 mailto 链接 -->
+        <span class="pill">✉ liwentao25 [at] stu [dot] xjtu [dot] edu [dot] cn</span>
+        <a href="https://github.com/efss24">GitHub</a>
+        <template data-todo="links">
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://orcid.org/">ORCID</a>
+        <!-- 【填写】CV：把 PDF 放到 files/cv.pdf -->
+        <a href="files/cv.pdf">CV</a>
+        </template>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ About ============ -->
+  <template data-todo="about">
+  <section id="about">
+    <h2>About</h2>
+    <!-- 【填写】2–4 句个人简介：身份、导师/团队、研究方向、正在做什么 -->
+    <p>
+      I am a ... at <a href="#">Institution</a>, advised by <a href="#">Advisor Name</a>.
+      My research focuses on ...
+    </p>
+    <p>
+      Previously, I received my ... degree from ...
+    </p>
+    <!-- 【可选】招生/合作说明，不需要就删掉 -->
+    <p class="note">I am open to collaborations. Feel free to reach out by email.</p>
+  </section>
+  </template>
+
+  <!-- ============ News：最新的放最上面，每条一个 <li> ============ -->
+  <template data-todo="news">
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">2026.10</span> One paper accepted to <b>Venue</b>.</li>
+      <li><span class="date">2026.09</span> News item.</li>
+      <li><span class="date">2026.06</span> News item.</li>
+    </ul>
+  </section>
+  </template>
+
+  <!-- ============ Publications ============
+       每篇论文复制一个 <div class="pub"> ... </div>。
+       作者里自己的名字用 <b class="me">...</b> 加粗；共同一作在名字后加 <sup>*</sup>。
+       缩略图放 assets/img/pubs/，没有图就保留占位图或删掉 <img> 那一行。 -->
+  <template data-todo="publications">
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="hint"><sup>*</sup> Equal contribution &nbsp;·&nbsp; <sup>†</sup> Corresponding author</p>
+
+    <div class="pub">
+      <img class="pub-thumb" src="assets/img/paper.svg" alt="">
+      <div class="pub-body">
+        <span class="venue">Venue 2026</span>
+        <h3>Paper Title One</h3>
+        <p class="authors"><b class="me">Wentao Li</b>, Coauthor A, Coauthor B<sup>†</sup></p>
+        <p class="pub-desc">One-sentence summary of the contribution (optional).</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+          <a href="#">arXiv</a>
+          <a href="#">Code</a>
+          <a href="#">Project</a>
+          <a href="#">BibTeX</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <img class="pub-thumb" src="assets/img/paper.svg" alt="">
+      <div class="pub-body">
+        <span class="venue">Journal 2025</span>
+        <h3>Paper Title Two</h3>
+        <p class="authors">Coauthor A<sup>*</sup>, <b class="me">Wentao Li</b><sup>*</sup>, Coauthor B</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 【可选】在投稿件：不想公开就整块删掉 -->
+    <h3 class="subhead">Preprints / Under Review</h3>
+    <div class="pub">
+      <img class="pub-thumb" src="assets/img/paper.svg" alt="">
+      <div class="pub-body">
+        <span class="venue venue-muted">Under Review</span>
+        <h3>Paper Title Three</h3>
+        <p class="authors"><b class="me">Wentao Li</b>, Coauthor A</p>
+        <div class="pub-links">
+          <a href="#">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </template>
+
+  <!-- ============ Projects：每个项目一个 <a class="card">，图片放 assets/img/projects/ ============ -->
+  <template data-todo="projects">
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <a class="card" href="#">
+        <img src="assets/img/paper.svg" alt="">
+        <div class="card-body">
+          <h3>Project One</h3>
+          <p>Short description of the project, demo or open-source tool.</p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img src="assets/img/paper.svg" alt="">
+        <div class="card-body">
+          <h3>Project Two</h3>
+          <p>Short description.</p>
+        </div>
+      </a>
+      <a class="card" href="https://github.com/efss24/SPMLD">
+        <img src="assets/img/paper.svg" alt="">
+        <div class="card-body">
+          <h3>SPMLD</h3>
+          <p>Describe this repository.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  </template>
+
+  <!-- ============ Education & Experience：时间倒序 ============ -->
+  <template data-todo="experience">
+  <section id="experience">
+    <h2>Education &amp; Experience</h2>
+    <ul class="timeline">
+      <li>
+        <span class="date">2023 – Present</span>
+        <div><b>University Name</b>, Ph.D. in ...<br><span class="muted">Advisor: Name</span></div>
+      </li>
+      <li>
+        <span class="date">2024.06 – 2024.12</span>
+        <div><b>Company / Institute</b>, Research Intern<br><span class="muted">Topic: ...</span></div>
+      </li>
+      <li>
+        <span class="date">2019 – 2023</span>
+        <div><b>University Name</b>, B.Eng. in ...</div>
+      </li>
+    </ul>
+  </section>
+  </template>
+
+  <!-- ============ Awards & Service ============ -->
+  <template data-todo="awards">
+  <section id="awards">
+    <h2>Awards &amp; Service</h2>
+    <ul class="plain">
+      <li><span class="date">2025</span> Award name</li>
+      <li><span class="date">2024</span> Scholarship name</li>
+      <li><span class="date">Reviewer</span> MICCAI, IEEE TMI, ...</li>
+    </ul>
+  </section>
+  </template>
+
+</main>
+
+<footer class="wrap footer">
+  <!-- 【填写】更新日期 -->
+  <p>© 2026 Wentao Li · Last updated: 2026.10</p>
+</footer>
+
+</body>
+</html>
